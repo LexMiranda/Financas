@@ -56,3 +56,8 @@ C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\WebAct
 C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\Ninject.xml
 C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\Ninject.Web.Common.xml
 C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\Ninject.Web.Mvc.xml
+C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\WebMatrix.WebData.dll
+C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\WebMatrix.WebData.xml
+C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\WebMatrix.Data.dll
+C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\bin\WebMatrix.Data.xml
+C:\Users\LexL\documents\visual studio 2015\Projects\Financas\Financas\obj\Debug\Financas.Migrations.SimpleMenbership.resources

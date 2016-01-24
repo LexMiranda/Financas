@@ -1,0 +1,58 @@
+﻿@model Financas.Models.BuscaMovimentacoesModel
+
+@using (Html.BeginForm("Busca", "Movimentacao", FormMethod.Get))
+{
+    <div>
+        <fieldset>
+            <legend> Data da movimentação</legend>
+            <div class="col-sm-6">
+                @Html.LabelFor(b => b.DataMinima, "Mínima")
+                @Html.TextBoxFor(b => b.DataMinima, new { @class = "form-control" })
+            </div>
+            <div class="col-sm-6">
+                @Html.LabelFor(b => b.DataMinima, "Máxima")
+                @Html.TextBoxFor(b => b.DataMaxima, new { @class = "form-control" })
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Valor da movimentação</legend>
+            <div class="col-sm-6">
+                @Html.LabelFor(b => b.ValorMinimo, "Mínimo")
+                @Html.TextBoxFor(b => b.ValorMinimo, new { @class = "form-control" })
+            </div>
+            <div class="col-sm-6">
+                @Html.LabelFor(b => b.ValorMaximo, "Máximo")
+                @Html.TextBoxFor(b => b.ValorMaximo, new { @class = "form-control" })
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Usuário e Tipo</legend>
+            <div class="col-sm-6">
+                @Html.LabelFor(b => b.UsuarioID, "Usuário")
+                @Html.DropDownListFor(b => b.UsuarioID, new SelectList(Model.Usuarios, "UsuarioID", "Nome"), "Escola de usuário", new { @class = "form-control" })
+            </div>
+        </fieldset>
+    </div>
+
+
+    <input type="submit" vale="Buscar" />  
+    <table class="table table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Data</th>
+        <th>Valor</th>
+        <th>Tipo</th>
+        <th>Usuário</th>
+    </tr>
+    @foreach (var m in Model.Movimentacoes)
+    {
+        <tr>
+            <td>@m.MoviemntacaoID</td>
+            <td>@m.Data</td>
+            <td>@m.Valor</td>
+            <td>@m.Tipo</td>
+            <td>@m.Usuario.Nome</td>
+        </tr>
+    }
+    </table>
+}
